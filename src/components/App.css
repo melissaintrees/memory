@@ -1,0 +1,47 @@
+
+body {
+    background-color: gainsboro;
+}
+.custom-grid {
+    margin-bottom: 100px !important;
+}
+
+
+img {
+    max-width: 300px !important;
+    max-height: 300px !important;
+    padding: 20px;
+    cursor: pointer;
+}
+h1 {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.score-info {
+    padding-bottom: 30px;
+}
+
+.special-class {
+    font-style: italic;
+    color: darkcyan;
+    font-weight: 300;
+    font-size: large;
+}
+.custom-footer {
+    height: 250px !important;
+    padding-top: 60px !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .custom-footer {
+      height: 350px !important;
+      padding-top: 60px !important;
+  }
+}
