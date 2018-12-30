@@ -1,32 +1,45 @@
 import React from 'react';
 import './App.css'
-import ImagesArr from "./ImagesArr.js"
 import Header from './Header'
 import Score from './Score'
 import ImgCard from './ImgCard'
 import Footer from './Footer'
-import crystals1 from './images/crystals1.jpg'
 
+// helper function that grabs the images for webpack processing
+function importAll(r) {
+    let ImagesObj = {};
+    r.keys().map((item) => { 
+        return (
+            ImagesObj[item.replace('./', '')] = r(item)
+        ) 
+    });
+    return ImagesObj;
+}
 
+let ImagesObject = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
+
+// this puts the image paths in an array:
+let ImagesArr = [];
+for (var key in ImagesObject) {
+    ImagesArr.push(ImagesObject[key])
+}
 
 class App extends React.Component {
     state = {
         images: [],
         score: 0,
         topScore: 0,
-        clickedImages: []
+        clickedImages: [],
     }
-    
 
     componentDidMount() {
-
-        console.log(ImagesArr[0].path)
         this.setState(
-            {images: ImagesArr}) 
+            { images: ImagesArr}) 
     }
+
     handleImgClick = id => {
         const { score, clickedImages, images } = this.state;
-        console.log(clickedImages)
+        // console.log(clickedImages)
         // initialize an empty array for clicked items
         // if hasn't been clicked before, and is clicked now
             // it can be added to the array of clicked items
@@ -44,7 +57,6 @@ class App extends React.Component {
             // clicked value array clears
         } 
         else {
-            console.log("you lose")
             if (this.state.score > this.state.topScore) {
                 this.setState({
                     topScore: this.state.score
@@ -57,10 +69,10 @@ class App extends React.Component {
         }
 
         if (score === 12){
-            console.log("you win!")
+            this.setState({
+                score: 1
+            })
         }
-        console.log("this img was clicked: ", id);
-        console.log("this is the users score: ", score);
     }
     randomShuffle(){
         this.state.images.sort(() => Math.random() - 0.5)
@@ -77,10 +89,10 @@ class App extends React.Component {
                         return (
                             <ImgCard
                                 handleImgClick={this.handleImgClick}
-                                image={crystals1}
-                                key={img.id}
-                                id={img.id}
-                                info={`crystal spread number ${img.id}`}
+                                image={img}
+                                key={img}
+                                id={img}
+                                info={`crystal spread number ${img}`}
                             />
                         ) 
                     })
