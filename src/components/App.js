@@ -67,12 +67,6 @@ class App extends React.Component {
                 clickedImages: []
             })
         }
-
-        if (score === 12){
-            this.setState({
-                score: 1
-            })
-        }
     }
     randomShuffle(){
         this.state.images.sort(() => Math.random() - 0.5)
