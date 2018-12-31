@@ -1,7 +1,7 @@
 {
   "main.css": "/memory/static/css/main.07b177cc.chunk.css",
-  "main.js": "/memory/static/js/main.273dca16.chunk.js",
-  "main.js.map": "/memory/static/js/main.273dca16.chunk.js.map",
+  "main.js": "/memory/static/js/main.3a3f2e68.chunk.js",
+  "main.js.map": "/memory/static/js/main.3a3f2e68.chunk.js.map",
   "static/js/1.5cabbdc2.chunk.js": "/memory/static/js/1.5cabbdc2.chunk.js",
   "static/js/1.5cabbdc2.chunk.js.map": "/memory/static/js/1.5cabbdc2.chunk.js.map",
   "runtime~main.js": "/memory/static/js/runtime~main.c86badf3.js",
@@ -20,6 +20,6 @@
   "static/media/crystals10.jpg": "/memory/static/media/crystals10.28616a52.jpg",
   "static/css/main.07b177cc.chunk.css.map": "/memory/static/css/main.07b177cc.chunk.css.map",
   "index.html": "/memory/index.html",
-  "precache-manifest.f34319819e4dd130a29edbbe7990c616.js": "/memory/precache-manifest.f34319819e4dd130a29edbbe7990c616.js",
+  "precache-manifest.82edf2af87dc930e677673b0aeae6133.js": "/memory/precache-manifest.82edf2af87dc930e677673b0aeae6133.js",
   "service-worker.js": "/memory/service-worker.js"
 }

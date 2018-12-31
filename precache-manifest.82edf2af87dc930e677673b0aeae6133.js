@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/memory/static/media/crystals2.ef1f852c.jpg"
   },
   {
-    "revision": "273dca1654a61299399a",
+    "revision": "3a3f2e68258de7a767ad",
     "url": "/memory/static/css/main.07b177cc.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/memory/static/media/crystals12.ab99c034.jpg"
   },
   {
-    "revision": "273dca1654a61299399a",
-    "url": "/memory/static/js/main.273dca16.chunk.js"
+    "revision": "3a3f2e68258de7a767ad",
+    "url": "/memory/static/js/main.3a3f2e68.chunk.js"
   },
   {
     "revision": "28d73cdd7c42d7b15b3cf7e4fb048f24",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/memory/static/media/crystals9.49d51fba.jpg"
   },
   {
-    "revision": "cef416f906d907ca26f42b188c0f7ef0",
+    "revision": "6910176636f2c51e0403eb966cf59adb",
     "url": "/memory/index.html"
   }
 ];
